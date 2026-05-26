@@ -77,6 +77,10 @@
 
         <meta-data android:name="android.webkit.WebView.MetricsOptOut" android:value="true" />
 
+        <meta-data
+            android:name="com.google.android.gms.car.application"
+            android:resource="@xml/automotive_app_desc" />
+
         <activity
             android:name=".ui.preference.PreferencesActivity"
             android:label="@string/app_preferences_name"
@@ -322,6 +326,15 @@
             tools:targetApi="R">
             <intent-filter>
                 <action android:name="android.service.controls.ControlsProviderService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".ui.car.IoTCarAppService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="androidx.car.app.CarAppService" />
+                <category android:name="androidx.car.app.category.IOT" />
             </intent-filter>
         </service>
 

@@ -6,6 +6,7 @@ firebase-crashlytics-gradle = "3.0.3"
 unmock-plugin = "0.8.0"
 about-libraries-plugin = "11.2.3"
 missing-metadata-guava = "31.1.1"
+car-app = "1.7.0"
 
 kotlin-coroutines = "1.8.1"
 kotlin-stdlib = "2.0.21"
@@ -72,6 +73,7 @@ kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-t
 kotlin-stdlib-jdk8 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin-stdlib" }
 
 core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
+androidx-car-app = { module = "androidx.car.app:app", version.ref = "car-app" }
 activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity-ktx" }
 fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragment-ktx" }
 appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
